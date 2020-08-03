@@ -1,0 +1,117 @@
+# Codebuch
+
+**Datensatz**  
+Codebuch Stand 2020-08-03 
+erstellt von Julia Lindner (jl125@hdm-stuttgart.de)
+
+**Inhalt**  
+Edges.csv (Edgelist)  
+Nodes.csv (Nodelist)  
+Codebuch.rm (Codierung der Datensätze)  
+
+# Ursprung und Datenerhebung  
+Ich habe den Datensatz der Mitglieder der Kohlekommission nach vorgegebenen Recherche-Möglichkeiten erstellt.   
+
+Recherchegrundlage:   
+- Mitglieder der Kohlekommission (Klimareporter): https://www.klimareporter.de/deutschland/das-sind-die-mitglieder-der-kohlekommission (Primärquelle für das Netzwerk)
+- Ergänzung der Personendaten durch Munzinger Archiv (ergänzend, Zugang über HdM-Netzwerk)  
+- Pressemeldung BMWI zur Einsetzung der Kommission: https://www.bmwi.de/Redaktion/DE/Pressemitteilungen/2018/20180606-bundeskabinett-setzt-kommission-wachstum-strukturwandel-und-beschaeftigung-ein.html (Faktencheck) 
+- FAZ Artikel: https://www.faz.net/aktuell/wirtschaft/bundestag-beschliesst-kohleausstieg-in-deutschland-16844265.html  
+
+Das Netzwerk ist ein ungerichtetes Two-Mode Akteurs- und Unternehmensnetzwerk.   
+
+# EDGE-Attribute  
+**from** (id Mitglied der Kommision),   
+**to** (alle Mitgliedschaften der Person, soweit recherchierbar, dazu gehört z.B. politische Partei, Unternehmen, Verbände, Vereine und weitere Organisationen).  
+
+# NODE-Attribute  
+
+**id** (Identische ID wie aus der edgelist zur Identifikation der Knoten.)   
+
+**type**   
+Handelt es sich um eine Person oder um eine Organisation?     
+0 = Person,     
+1 = Organization.  
+
+**sex**   
+Welches Geschlecht hat die Person?    
+1 = weiblich,     
+2 = männlich,     
+3 = divers.   
+
+**age**     
+Welches Alter hat die Person?     
+1 = 1930 bis 1940,    
+2 = 1941 bis 1950,          
+3 = 1951 bis 1960,             
+4 = 1961 bis 1970,           
+5 = 1971 bis 1980,          
+6 = 1981 bis 1990,          
+7 = 1991 bis 2000,        
+8 = später als 2000.     
+
+**party**      
+Welcher Partei gehört die Person an?  
+1 = CDU,    
+2 = SPD,    
+3 = AfD,    
+4 = FDP,    
+5 = Die Linke,       
+6 = Die Grünen,    
+7 = CSU.    
+
+**representation**    
+Welche Funktion innerhalb der Kommission nimmt die Person ein?      
+1 = Politik,    
+2 = Wirtschaft,    
+3 = Gewerkschaft,    
+4 = Umwelt,     
+5 = Regionen,     
+6 = Wissenschaft.   
+
+**position**  
+Welche Position nimmt die Person ein?   
+1 = Vorsitz,    
+2 = Mitglied,   
+3 = kein Stimmrecht.    
+
+**state**        
+In welchem Bundesland hält sich die Person aktuell auf?     
+1 = Baden-Württemberg,    
+2 = Bayern,   
+3 = Berlin,   
+4 = Brandenburg,    
+5 = Bremen,   
+6 = Hamburg,    
+7 = Hessen,     
+8 = Mecklenburg-Vorpommern,     
+9 = Niedersachsen,    
+10 = Nordrhein-Westfalen,    
+11 = Rheinland-Pfalz,     
+12 = Saarland,      
+13 = Sachsen,     
+14 = Sachsen-Anhalt,        
+15 = Schleswig-Holstein,     
+16 = Thüringen.   
+
+**birth place**       
+Wo ist die Person geboren?    
+1 = Baden-Württemberg,    
+2 = Bayern,   
+3 = Berlin,   
+4 = Brandenburg,      
+5 = Bremen,     
+6 = Hamburg,    
+7 = Hessen,   
+8 = Mecklenburg-Vorpommern,   
+9 = Niedersachsen,    
+10 = Nordrhein-Westfalen,    
+11 = Rheinland-Pfalz,   
+12 = Saarland,    
+13 = Sachsen,   
+14 = Sachsen-Anhalt,      
+15 = Schleswig-Holstein,         
+16 = Thüringen,     
+17 = andere Länder.   
+
+##
